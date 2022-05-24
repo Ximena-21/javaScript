@@ -13,16 +13,26 @@
             
             let contar = 0;
 
-            array.forEach(function(elemento){
+           /*  array.forEach(function(elemento){
                 if (array[elemento] === valor) {
                    return contar++;
                 };
+            }); */
+            //usar funcion flecha mejor 
 
+            array.forEach((elemento)=>{
+                if (array[elemento] === valor) {
+                    return contar++;
+                 };
             });
-            console.log(`se repite ${contar} veces`)
+
+
+
+            
+            console.log(`El elemento ${valor} se repite ${contar} veces`)
         };
 
-        ejecutar([1,'paula',2,'paula',2,'sofia',3,4],'paula')
+        ejecutar([1,'paula',2,'paula',2,'sofia',3,4],4)
 
     
 

@@ -19,8 +19,8 @@ const libroContable = {
 function addIncome (mes,valor){
 
     libroContable[mes] = libroContable[mes] + valor
-    return libroContable[mes]
-
+    /* return libroContable[mes] */ //no va return porque no necesito guardar ese valor 
+    console.log(libroContable[mes])
 }
 
 //le digo lo que le quiero cambiar a un elemento del objeto
@@ -29,7 +29,7 @@ console.log(addIncome('enero',100))
 
 //hago console.log de todo el objeto para verificar los cambios añadidos
 
-/* console.log(libroContable) */
+console.log(libroContable)
 
 // hacer una funcion que me permita, restarle una nueva cantidad a un mes dado
 function deduct (mes,valor){
@@ -41,7 +41,7 @@ function deduct (mes,valor){
 
 console.log(deduct('marzo',50))
 
-/* console.log(libroContable) */
+console.log(libroContable)
 
 
 
