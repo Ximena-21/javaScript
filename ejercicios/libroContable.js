@@ -19,7 +19,7 @@ const libroContable = {
 function addIncome (mes,valor){
 
     libroContable[mes] = libroContable[mes] + valor
-    /* return libroContable[mes] */ //no va return porque no necesito guardar ese valor 
+    /* return libroContable[mes] */ //no va return porque no necesito guardar ese valor
     console.log(libroContable[mes])
 }
 

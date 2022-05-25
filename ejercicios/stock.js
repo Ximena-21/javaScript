@@ -19,7 +19,7 @@ const productos =[
 //necesito un metodo filter para filtrar dentro de una funcion
 //array.filter(function(currentValue, index, arr), thisValue)
 
-/* function filtarProductosStock(stock){
+function filtarProductosStock(stock){
 
 const productosFiltrados = productos.filter(function(producto){
      return producto.stock >= stock
@@ -28,7 +28,7 @@ const productosFiltrados = productos.filter(function(producto){
  return productosFiltrados
 };
 
-console.log(filtarProductosStock(10)) */
+console.log(filtarProductosStock(10))
 
 //me retorna
 /*  (2) [{…}, {…}]
@@ -69,3 +69,16 @@ console.log(filtarProductosStock(10)) */
 
         console.log(productos)
 
+
+
+//añadir un nuevo producto
+
+function addProduct (name,price,stock) {
+
+    productos.push({name, price, stock})
+
+    console.log(productos)
+
+};
+
+addProduct('chocolate', 6000, 10);
