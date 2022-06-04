@@ -1,6 +1,6 @@
 const singIn = document.querySelector(".buttonSignIn")
 const generate = document.querySelector(".buttonGenerate")
-const card = document.querySelectorAll(".cards")
+const containerCards = document.querySelectorAll(".addCard")
 
 const productList = [];
 
@@ -12,22 +12,43 @@ function addProducts () {
     const price = document.querySelector(".priceProduct").value;
     const newProduct = {nameProduct,price};
     
-
+    
     productList.push(newProduct) ;
-
-   
+    
+    /* return productList */
+    
 };
 
 singIn.addEventListener('click', addProducts)
 
-/* console.log(productList)
- */
+/* console.log(productList) */
 
-productList.forEach(() => {
+function addCardProduct () {
     
-});
+    productList.forEach((product) => {
+        
+        const card = document.createElement('div');
+        card.className = "card";
+        const productName = document.createElement('h2');
+        productName.className = "name";
+        const productPrice = document.createElement('span');
+        productPrice.className = "price"
+        const containerCards = document.querySelector('.addCard')
+        
+
+        productName.textContent = product.nameProduct;
+        productPrice.textContent = product.price;
+    
+        card.appendChild(productName);
+        card.appendChild(productPrice);
+    
+        containerCards.appendChild(card);
+        
+    });
+};
 
 
+generate.addEventListener('click',addCardProduct)
 
 
 // const newList = productList.push(newProduct) ;

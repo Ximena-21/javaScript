@@ -15,7 +15,6 @@ const listaProductos = [
 const container = document.querySelector('.containerCards')
 
 
-//un metodo map, para que me re
 listaProductos.forEach((producto) =>{
     
 
