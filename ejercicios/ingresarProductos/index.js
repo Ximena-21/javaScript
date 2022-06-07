@@ -1,5 +1,5 @@
 const singIn = document.querySelector(".buttonSignIn")
-const generate = document.querySelector(".buttonGenerate")
+
 
 const productList = [];
 
