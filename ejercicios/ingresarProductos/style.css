@@ -137,6 +137,7 @@ input::placeholder{
     border-radius: 18px;
     box-shadow: rgb(0 0 0 / 50%) 0px 4px 5px, rgb(0 0 0 / 2%) 0px -1px 3px, rgb(0 0 0 / 16%) 0px 2px 3px, rgb(0 0 0 / 8%) 0px 3px 5px, rgb(0 0 0 / 10%) 0px 0px 3px;
     font-weight: bold;
+    cursor:pointer;
     
 }
 
